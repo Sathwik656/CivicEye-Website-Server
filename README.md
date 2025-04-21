@@ -116,6 +116,6 @@ Contributions are welcome! If you find issues or have suggestions for improvemen
 
 ## 📜 License 
 
-This project is licensed under the MIT License. See the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License. See the [LICENSE.md](https://github.com/SHADOW2669/CivicEye-Website-Server?tab=MIT-1-ov-file) file for details.
 
 ---
