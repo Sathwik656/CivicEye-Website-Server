@@ -108,13 +108,13 @@ You need a local web server with PHP support (e.g., XAMPP, MAMP, WAMP, Laragon, 
 
 ---
 
-## 🤝 Contributing (Optional)
+## 🤝 Contributing 
 
 Contributions are welcome! If you find issues or have suggestions for improvements, feel free to open an issue or submit a pull request on [GitHub](https://github.com/SHADOW2669/CivicEye-Website-Server).
 
 ---
 
-## 📜 License (Optional)
+## 📜 License 
 
 This project is licensed under the MIT License. See the [LICENSE.md](LICENSE.md) file for details.
 
