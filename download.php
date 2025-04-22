@@ -26,8 +26,9 @@
 <body>
     <div id="particles-js"></div>
 
-    <?php session_start(); ?>
-
+    <?php
+session_start();
+?>
     <nav class="navbar">
         <a href="index.php" class="navbar-logo">
             <img src="IMAGES/logo1.png" alt="Civic Eye Logo"

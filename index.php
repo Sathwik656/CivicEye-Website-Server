@@ -26,7 +26,9 @@
 <body>
     <div id="particles-js"></div>
 
-    <?php session_start(); ?>
+    <?php
+session_start();
+?>
 
     <nav class="navbar">
         <a href="#hero-page" class="navbar-logo">

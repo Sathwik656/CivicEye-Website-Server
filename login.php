@@ -1,5 +1,14 @@
 <?php
+$lifetime = 60 * 60 * 24 * 7; // 7 days
 
+session_set_cookie_params([
+    'lifetime' => $lifetime,
+    'path' => '/',
+    'domain' => '', // Leave blank unless needed
+    'secure' => false, // Set to true if using HTTPS
+    'httponly' => true,
+    'samesite' => 'Lax'
+]);
 session_start();
 
 $errors = [

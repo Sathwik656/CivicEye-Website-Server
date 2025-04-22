@@ -1,23 +1,10 @@
 <?php
-session_start(); // Start the session to access session variables
-
-// Logout handler
-if (isset($_GET['logout']) && $_GET['logout'] === 'true') {
-    session_destroy();
-    header("Location: index.php");
-    exit();
-}
-
-// Login session validation using email
-if (isset($_SESSION['email'])) {
-    $email = $_SESSION['email']; // Store email
-    $name = $_SESSION['name'];   // Store name
-} else {
-    // Redirect if not logged in
-    header("Location: login.php");
-    exit();
-}
+require_once 'auth.php';
+protect('user'); // Only users allowed
 ?>
+
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -121,10 +108,12 @@ if (isset($_SESSION['email'])) {
 
 
         <?php if (isset($_SESSION['email'])): ?>
-            <a href="?logout=true" class="logout-btn-link">
-                <button class="btn-base btn-nav-action logout-btn">LOGOUT</button>
-            </a>
-        <?php endif; ?>
+    <a href="?logout=true" class="logout-btn-link">
+        <button class="btn-base btn-nav-action logout-btn">LOGOUT</button>
+    </a>
+<?php endif; ?>
+
+
 
 
     </div>
