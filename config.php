@@ -1,12 +1,12 @@
 <?php
 $host = "localhost";
-$user = "phpmyadmin";
-$password = "212173314_MKs";
-$database = "user_db";
+$dbuser = "root";         // default for localhost if you're not using a custom user
+$dbpass = "212173314_MKs";// enter your MySQL root password here (often empty on local)
+$dbname = "user_db";      // ✅ this is your actual database name
 
-$conn = new mysqli($host,$user,$password,$database);
+$conn = new mysqli($host, $dbuser, $dbpass, $dbname);
 
-if($conn->connect_error){
-    die("Connection failed".$conn->connect_error);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
 ?>
