@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
 $dbuser = "root";         // default for localhost if you're not using a custom user
-$dbpass = "212173314_MKs";// enter your MySQL root password here (often empty on local)
-$dbname = "user_db";      // ✅ this is your actual database name
+$dbpass = "";// enter your MySQL root password here (often empty on local)
+$dbname = "";      // ✅ this is your actual database name
 
 $conn = new mysqli($host, $dbuser, $dbpass, $dbname);
 
